@@ -15,9 +15,7 @@
 3. Look at generated rbg.ppm in the build folder - it will be a beautiful scene depicting pikachu and eevee having a wonderful time together with a nice tree in the background for nature (#scenery #aesthetic #motivational)
 
 ## Description
-Short summary of what was produced and how it extends the referenced assignment.
-
-Explicit list of features added and code locations:
+List of features added and code locations:
 - Feature: Python file to easily add objects, materials and lights and generate JSON file for rendering. Location: src/generate_scene.py
 - Feature: New materials for different colours in the scene. Location: in python file src/generate_scene.py
 - Feature: Joy and happiness in the form of two cute pokemon in nature. Location: in our hearts (also as an output in rgb.ppm)
