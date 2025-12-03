@@ -9,7 +9,29 @@ bool first_hit(
   Eigen::Vector3d & n)
 {
   ////////////////////////////////////////////////////////////////////////////
-  // Replace with your code here:
-  return false;
+  bool hit = false;
+  double closest_t = std::numeric_limits<double>::infinity();
+  Eigen::Vector3d temp_n;
+
+  for (int i = 0; i < objects.size(); ++i)
+  {
+    double temp_t;
+    if (objects[i]->intersect(ray, min_t, temp_t, temp_n))
+    {
+      if (temp_t < closest_t)
+      {
+        hit = true;
+        closest_t = temp_t;
+        hit_id = i;
+        n = temp_n;
+      }
+    }
+  }
+
+  if (hit)
+  {
+    t = closest_t;
+  }
+  return hit;
   ////////////////////////////////////////////////////////////////////////////
 }

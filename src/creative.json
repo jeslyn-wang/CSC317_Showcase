@@ -9,9 +9,96 @@
     "width": 1.7777777778
   },
   "materials": [
+    {
+      "name": "Lambertian blue",
+      "ka": [0.2, 0.3, 0.8],
+      "kd": [0.2, 0.3, 0.8],
+      "ks": [0.1,0.1,0.1],
+      "km": [0.3,0.3,0.3],
+      "phong_exponent": 20
+    },
+    {
+      "name": "black",
+      "ka": [0.0, 0.0, 0.0],
+      "kd": [0.0, 0.0, 0.0],
+      "ks": [0.0,0.0,0.0],
+      "km": [0.0,0.0,0.0],
+      "phong_exponent": 10
+    },
+    {
+      "name": "white",
+      "ka": [1.0, 1.0, 1.0],
+      "kd": [1.0, 1.0, 1.0],
+      "ks": [1.0, 1.0, 1.0],
+      "km": [0.0, 0.0, 0.0], 
+      "phong_exponent": 10
+    },
+    {
+      "name": "green",
+      "ka": [0.1, 0.9, 0.1],
+      "kd": [0.1, 0.9, 0.1],
+      "ks": [0.3,0.3,0.3],
+      "km": [0.0, 0.0, 0.0],
+      "phong_exponent": 1
+    }
   ],
   "lights":[
+    {
+      "type": "directional",
+      "direction": [0,0,-1],
+      "color": [0.8,0.8,0.8]
+    }
   ],
   "objects": [
+    {
+      "type": "sphere",
+      "material": "white",
+      "center": [0,0,0],
+      "radius": 0.5
+    },
+    {
+      "type": "sphere",
+      "material": "black",
+      "center": [0.3,0.5,0],
+      "radius": 0.2
+    },
+    {
+      "type": "sphere",
+      "material": "black",
+      "center": [-0.3,0.5,0],
+      "radius": 0.2
+    },
+    {
+      "type": "sphere",
+      "material": "black",
+      "center": [0.1,0.05,0.2],
+      "radius": 0.3
+    },
+    {
+      "type": "sphere",
+      "material": "black",
+      "center": [-0.1,0.05,0.2],
+      "radius": 0.3
+    },
+    {"type": "triangle",
+      "corners": [
+        [-0.1,0,0.5],
+        [0.1,0,0.5],
+        [0,-0.1,0.5]
+      ],
+      "material": "black"
+    },
+    {
+      "type": "plane",
+      "material": "Lambertian blue",
+      "point": [0,0,-10],
+      "normal": [0,0,1]
+    },
+    {
+      "type": "plane",
+      "material": "green",
+      "point": [0,-0.49,0],
+      "normal": [0,1,0]
+    }
   ]
 }
