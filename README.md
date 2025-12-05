@@ -22,8 +22,6 @@ List of features added and code locations:
 - Feature: New materials for different colours in the scene. Location: in python file src/generate_scene.py
 - Feature: Joy and happiness in the form of two cute pokemon in nature. Location: in our hearts (also as an output in rgb.ppm)
 
-Notes:
-- It took a lot of time and engineering estimation (guess & checking) to put everything in the right places. Thankfully the pure positivity emanating from these two beloved pokemon pulled me through. Thanks Pikachu and Eevee. 
 
 ## Acknowledgements
 - I followed the structure of the previously implemented code in A2 mostly to create this piece. So I'd like to acknowledge the teaching team for setting it up. 
